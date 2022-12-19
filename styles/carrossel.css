@@ -1,0 +1,132 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 1em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+
+    transition: 200ms;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    margin: 1em ;
+    background: var(--branco);
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5)
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__descricao img{
+    border-radius: 5px;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    color: var(--laranja);
+    margin-top: .5em;
+}
+
+.descricao__livro {
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    margin-right: 1em;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__items {
+    margin: 1em .5em;
+}
+
+#favoritar {
+    position: relative;
+    top: 3px;
+}
+
+.botoes__ancora {
+    margin-top: 1em;
+    font-weight: 700;
+    background-color: var(--laranja);
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em 2.2em;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+      .carrossel__titulo {
+        padding: 3em 0 1.7em 0;
+      }  
+
+      .swiper-pagination {
+        margin: 1em 0 2em 0;
+      }
+
+      .swiper {
+        width: 70%;
+      }
+
+      .swiper-button-next, 
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .card { 
+        width: 65%;
+        margin: 3em auto 3em auto;
+      }
+
+}
+
+@media screen and (min-width: 1728px) {
+   .card {
+        width: 30%;
+   }
+
+   .carrossel__container {
+    width: 60%;
+    margin: 0 auto;
+   }
+
+}
+
+
+
+
+

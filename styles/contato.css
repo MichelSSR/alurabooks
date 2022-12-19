@@ -1,0 +1,131 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    background-color: transparent;
+    border: 1px solid darkcyan;
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+}
+
+.contato__email::placeholder {
+    background: url("../img/Email.svg") no-repeat;
+    padding: 0 0 10px 2.5em;
+    font-family: var(--fonte-principal);
+}
+
+
+
+.rodape {
+    border-top: 1px solid gray;
+    padding: 1em 0;
+}
+
+.rodape__titulo {
+    padding: 0 1em;
+}
+
+.lista__rodape {
+    display: none;
+}    
+
+@media screen and (min-width: 1024px) { 
+    .contato {
+        display: flex;
+        padding: 3em 7em;
+    }
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__texto {
+        font-size: 16px;
+    }
+
+    .contato__email {
+        height: 100%;
+        margin-top: 2.7em;
+
+        margin-left: 1.5em;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista__rodape {
+        display: block;
+    }
+
+    .lista__item-rodape {
+        display: flex;
+        align-items: center;
+        margin: .5em 0;
+    }
+
+    .lista__item-link {
+        margin: 1em;
+        text-decoration: none;
+        color: #363030;
+    }
+
+    .lista__titulo {
+        color: #858585;
+        font-size: 14px;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+        color: #002099;
+    }
+}
+
+@media screen and (min-width: 1728px) { 
+    .contato {
+        padding: 3em 32em;
+    }
+
+    .contato__email {
+        position: relative;
+        bottom: 2em;
+        width: 42%;
+
+    }
+
+    .contato__email-div {
+        width: 50%;
+    }
+
+
+    .rodape {
+        padding: 3em 1em;
+    }
+
+    .lista__rodape {
+        padding-left: 2em ;
+        border-left: 1px solid #858585;
+    }
+}

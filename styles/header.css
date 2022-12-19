@@ -1,0 +1,137 @@
+.cabecalho__menu-hamburger {
+    width: 24px;
+    height: 24px;
+    background: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0.5em 0 0.5em;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 0 2px 0 2px;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.container__botao {
+    display: none;
+}
+
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    background-color: var(--branco);
+    padding: 1em;
+    margin: -.6em;
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__titulo, .opcoes {
+    display: none;
+}
+
+.container__texto { 
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__titulo, .container__titulo-negrito {
+        font-family: var(--fonte-secundaria);
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .container__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        margin: 0 2em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .cabecalho__menu-hamburger, .imagem__favoritos {
+        display: none;
+    }
+
+    .marcador__menu {
+        display: none;
+    }
+
+    .marcador__menu:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    
+
+}
+
+
+@media screen and (min-width: 1720px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #463636;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .container {
+        padding: .5em 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+}
